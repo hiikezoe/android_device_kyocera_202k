@@ -1,0 +1,6 @@
+service rmt_storage /system/bin/rmt_storage
+    user root
+    disabled
+
+on property:ro.emmc=1
+    start rmt_storage
