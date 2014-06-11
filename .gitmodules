@@ -1,0 +1,3 @@
+[submodule "mmc_protect"]
+	path = mmc_protect
+	url = https://github.com/hiikezoe/android_mmc_protect.git
