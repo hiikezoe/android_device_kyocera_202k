@@ -9,7 +9,7 @@ on post-fs
     wait /dev/block/mmcblk0p17
     write /sys/kernel/mmc_protect/clear mmcblk0p17
 
-service rmt_storage /system/bin/rmt_storage
+service rmt_storage /vendor/bin/rmt_storage
     user root
     disabled
 
