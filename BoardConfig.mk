@@ -16,6 +16,7 @@ TARGET_BOOTLOADER_BOARD_NAME := 202k
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/kyocera/202k/root/fstab.qcom
+BOARD_CUSTOM_GRAPHICS := ../../../device/kyocera/202k/recovery/graphics.c ../../../device/kyocera/202k/recovery/graphics_overlay.c
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 no_console_suspend=1 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2
 BOARD_KERNEL_BASE := 0x80200000
