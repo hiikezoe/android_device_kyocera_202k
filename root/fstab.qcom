@@ -7,3 +7,4 @@
 /dev/block/mmcblk0p17 /system   ext4 ro,noatime,barrier=1 wait
 /dev/block/mmcblk0p18 /data     ext4 ro,noatime,nosuid,nodev,noauto_da_alloc,barrier=1 wait,check
 /dev/block/mmcblk0p20 /cache    ext4 ro,noatime,nosuid,nodev,barrier=1 wait,check
+/dev/block/mmcblk0p29 /sdcard   vfat noatime,nosuid,nodev,barrier=1 wait,check
