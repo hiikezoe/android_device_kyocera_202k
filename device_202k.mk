@@ -7,6 +7,13 @@ $(call inherit-product-if-exists, vendor/kyocera/202k/202k-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/kyocera/202k/overlay
 
+LOCAL_PATH := device/kyocera/202k
+
+PRODUCT_COPY_FILES += \
+  $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
+  $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
+  $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

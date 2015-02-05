@@ -1,0 +1,21 @@
+on init
+    mkdir /persist
+
+    mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
+    mkdir /storage/sdcard0 0700 root root
+
+    export EXTERNAL_STORAGE /storage/sdcard0
+
+    symlink /storage/sdcard0 /mnt/internal_sd
+    symlink /storage/sdcard0 /internal_sd
+
+on emmc-fs
+    mount_all /fstab.qcom
+
+on post-fs-data
+    setprop vold.post_fs_data_done 1
+
+service fuse_sdcard0 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard0 /storage/sdcard0
+    class late_start
+    disabled
+
