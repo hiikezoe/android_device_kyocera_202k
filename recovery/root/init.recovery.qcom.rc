@@ -6,10 +6,3 @@ on post-fs
     write /sys/kernel/mmc_protect/clear mmcblk0p16
     wait /dev/block/mmcblk0p17
     write /sys/kernel/mmc_protect/clear mmcblk0p17
-
-service rmt_storage /vendor/bin/rmt_storage
-    user root
-    disabled
-
-on property:ro.emmc=1
-    start rmt_storage
