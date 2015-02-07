@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="hiikezoe/android_kernel_kyocera_202k.git" path="kernel/kyocera/202k" remote="github" revision="master"/>
+  <project name="hiikezoe/android_device_kyocera_202k.git" path="device/kyocera/202k" remote="github" revision="cm-11.0"/>
+
+  <remove-project name="CyanogenMod/android_bootable_recovery"/>
+  <project name="hiikezoe/android_bootable_recovery.git" path="bootable/recovery" remote="github" revision="cm-11.0-kyocera"/>
+</manifest>
