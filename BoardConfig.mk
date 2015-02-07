@@ -14,6 +14,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_BOOTLOADER_BOARD_NAME := 202k
 
+ENABLE_LOKI_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := device/kyocera/202k/root/fstab.qcom
 BOARD_CUSTOM_GRAPHICS := ../../../device/kyocera/202k/recovery/graphics.c ../../../device/kyocera/202k/recovery/graphics_overlay.c
