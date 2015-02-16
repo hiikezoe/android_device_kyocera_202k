@@ -28,7 +28,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 BOARD_WANTS_EMMC_BOOT := true
 
 TARGET_KERNEL_CONFIG := msm8960_defconfig
-TARGET_KERNEL_SOURCE := kernel/kyocera/202k
+TARGET_KERNEL_SOURCE := kernel/kyocera/msm8960
 
 EXTRA_KERNEL_MODULES:
 	make -C device/kyocera/202k/mmc_protect KDIR=$(KERNEL_OUT) PWD=$(PWD)/device/kyocera/202k/mmc_protect ARCH=$(TARGET_ARCH) $(ARM_CROSS_COMPILE)
