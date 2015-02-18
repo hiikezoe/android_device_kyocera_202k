@@ -14,6 +14,10 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
   $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
 
+$(call inherit-product, $(LOCAL_PATH)/idc/idc.mk)
+$(call inherit-product, $(LOCAL_PATH)/keylayout/keylayout.mk)
+$(call inherit-product, $(LOCAL_PATH)/keychars/keychars.mk)
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
