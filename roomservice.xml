@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="hiikezoe/android_kernel_kyocera_msm8960.git" path="kernel/kyocera/msm8960" remote="github" revision="202K_100.2.2840-on-AU_LINUX_ANDROID_JB_2.5_RELEASE.04.02.02.69.018"/>
+  <project name="hiikezoe/android_kernel_kyocera_msm8960.git" path="kernel/kyocera/msm8960" remote="github" revision="202K_100.2.2840-on-AU_LINUX_ANDROID_JB_2.5_RELEASE.04.02.02.069.024"/>
   <project name="hiikezoe/android_device_kyocera_202k.git" path="device/kyocera/202k" remote="github" revision="cm-11.0"/>
 
   <remove-project name="CyanogenMod/android_bootable_recovery"/>
