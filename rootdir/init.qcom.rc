@@ -36,6 +36,11 @@ service rmt_storage /system/bin/rmt_storage
     class core
     disabled
 
+service qmuxd /system/bin/qmuxd
+    class main
+    user radio
+    group radio audio bluetooth gps qcom_diag
+
 on property:ro.emmc=1
     start rmt_storage
 
