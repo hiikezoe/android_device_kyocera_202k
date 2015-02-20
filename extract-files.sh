@@ -58,7 +58,4 @@ rm -rf $BASE/*
 
 extract ../../$VENDOR/$DEVICE/proprietary-files.txt $BASE
 
-extract ../../$VENDOR/$DEVICE/proprietary-files-recovery.txt ../../$VENDOR/$DEVICE/recovery/root/vendor
-find ../../$VENDOR/$DEVICE/recovery/root/vendor/bin -type f | xargs sed -i -e 's/\/system\/bin/\/vendor\/bin/g'
-
 ./setup-makefiles.sh
