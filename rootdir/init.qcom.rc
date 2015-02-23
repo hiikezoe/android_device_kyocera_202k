@@ -1,4 +1,5 @@
 on init
+    mkdir /firmware 0771 system system
     mkdir /persist 0771 system system
 
     mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
@@ -11,6 +12,9 @@ on init
 
 on emmc-fs
     mount_all /fstab.qcom
+
+    wait /dev/block/platform/msm_sdcc.1/by-name/modem
+    mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337
 
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
