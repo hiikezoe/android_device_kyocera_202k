@@ -13,6 +13,10 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
   $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
   $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
+  $(LOCAL_PATH)/rootdir/init.qcom.syspart_fixup.sh:root/init.qcom.syspart_fixup.sh \
+  $(LOCAL_PATH)/rootdir/init.kc.firmware_links.sh:system/etc/init.kc.firmware_links.sh \
+  $(LOCAL_PATH)/rootdir/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
+  $(LOCAL_PATH)/rootdir/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
 
 $(call inherit-product, $(LOCAL_PATH)/idc/idc.mk)
 $(call inherit-product, $(LOCAL_PATH)/keylayout/keylayout.mk)

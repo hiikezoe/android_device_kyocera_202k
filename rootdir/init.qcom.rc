@@ -29,6 +29,10 @@ on emmc-fs
     write /sys/class/android_usb/android0/iProduct ${ro.product.model}
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
 
+    mount tmpfs tmpfs /system/etc/firmware rw nosuid nodev mode=0755
+    exec /system/bin/sh /init.qcom.syspart_fixup.sh
+    mount tmpfs tmpfs /system/etc/firmware ro remount nosuid nodev mode=0755
+
 on post-fs-data
     setprop vold.post_fs_data_done 1
 
