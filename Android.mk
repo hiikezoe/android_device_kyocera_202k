@@ -1,11 +1,11 @@
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_PATH := $(TARGET_OUT)/etc
 LOCAL_MODULE := firmware
 LOCAL_MODULE_TAGS := optional
-LOCAL_ADDITIONAL_DEPENDENCIES := mkdir
+LOCAL_MODULE_CLASS := FAKE
 
-mkdir:
+include $(BUILD_SYSTEM)/base_rules.mk
+
+$(LOCAL_BUILT_MODULE): $(LOCAL_ADDITIONAL_DEPENDENCIES)
 	mkdir -p $(TARGET_OUT)/etc/firmware
-
-include $(BUILD_PHONY_PACKAGE)
+	touch $@
