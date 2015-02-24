@@ -20,6 +20,9 @@ $(call inherit-product, $(LOCAL_PATH)/keychars/keychars.mk)
 
 $(call inherit-product, build/target/product/full.mk)
 
+PRODUCT_PACKAGES += \
+  firmware
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_202k
 PRODUCT_DEVICE := 202k
