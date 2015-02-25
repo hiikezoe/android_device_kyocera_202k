@@ -8,4 +8,5 @@ include $(BUILD_SYSTEM)/base_rules.mk
 
 $(LOCAL_BUILT_MODULE): $(LOCAL_ADDITIONAL_DEPENDENCIES)
 	mkdir -p $(TARGET_OUT)/etc/firmware
-	touch $@
+	touch $(TARGET_OUT)/etc/firmware/dummy
+	mkdir -p $(dir $@)firmware
