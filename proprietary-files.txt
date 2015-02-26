@@ -43,10 +43,17 @@ vendor/lib/libpredtm.so
 lib/hw/kc_lights.default.so
 
 lib/hw/camera.msm8960.so
+lib/libgemini.so
 lib/libkc_cpufreqd.so
 lib/libmmcamera_interface.so
 lib/libmmipl.so
+lib/libmmjpeg.so
 lib/libmmjpeg_interface.so
+lib/libmmstillomx.so
+lib/libmercury.so
+lib/libimage-jpeg-enc-omx-comp.so
+lib/libimage-omx-common.so
+lib/libglobalscreenshot.so
 
 lib/libsbmcgm-jni.so
 
