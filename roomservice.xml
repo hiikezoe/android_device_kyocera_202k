@@ -5,4 +5,6 @@
 
   <remove-project name="CyanogenMod/android_bootable_recovery"/>
   <project name="hiikezoe/android_bootable_recovery.git" path="bootable/recovery" remote="github" revision="cm-11.0-kyocera"/>
+  <remove-project name="CyanogenMod/android_frameworks_native"/>
+  <project name="hiikezoe/android_frameworks_native.git" path="frameworks/native" remote="github" revision="cm-11.0-202k"/>
 </manifest>
