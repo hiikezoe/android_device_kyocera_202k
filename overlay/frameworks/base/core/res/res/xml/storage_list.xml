@@ -24,5 +24,7 @@
     <storage
         android:mountPoint="/storage/sdcard0"
         android:storageDescription="@string/storage_internal"
-        android:removable="false" />
+        android:removable="true"
+        android:primary="true"
+        android:maxFileSize="4096" />
 </StorageList>
