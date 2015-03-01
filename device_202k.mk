@@ -60,6 +60,7 @@ PRODUCT_PACKAGES += \
   libtilerenderer
 
 PRODUCT_PACKAGES += \
+  lights.msm8960 \
   local_time.default \
   power.default \
 
