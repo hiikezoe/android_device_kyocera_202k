@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
   local_time.default \
-  power.msm8960
+  power.default \
 
 #PRODUCT_PACKAGES += \
 #  libdashplayer \
